@@ -57,10 +57,3 @@ function clickbutton() {
   }
 }
 pagenum.forEach((item) => item.addEventListener("click", clickbutton));
-/* page2.addEventListener("click", () => {
-});
-
-page3.addEventListener("click", () => {
-    clicknum = 2;
-  slidepage.style.transform = "translateX(" + -100 * clicknum + "%)";
-}); */

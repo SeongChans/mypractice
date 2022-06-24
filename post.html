@@ -80,22 +80,22 @@
         </div>
       </div>
       <div class="postmain">
-        <div class="p_num">게시판 번호</div>
-        <div class="p_name">게시판 제목</div>
-        <div class="p_admin">작성자</div>
-        <div class="p_date">등록 / 수정 날짜</div>
-        <div class="p_look">조회수</div>
-        <div class="p_main">게시판입니다</div>
+        <div class="p_chart">
+          <div class="p_num" id="select_n">9</div>
+          <div class="p_title" id="select_t">게시판 제목</div>
+          <div class="p_admin" id="select_a">작성자</div>
+          <div class="p_date" id="select_d">등록 / 수정 날짜</div>
+          <div class="p_look" id="select_l">조회수</div>
+        </div>
+        <div id="p_main">
+          <textarea id="textboard" readonly>게시판입니다.</textarea>
+        </div>
       </div>
       <div class="p_buttonwrap">
-        <div class="p_btn_1">
-          <div class="p_btn" id="p_ok">확 인</div>
-          <div class="p_btn" id="p_change">수 정</div>
-          <div class="p_btn" id="p_exit">나 가 기</div>
-        </div>
-        <div class="p_btn_2">
-          <div class="p_btn" id="p_cancel">취 소</div>
-        </div>
+        <div class="p_btn" id="p_ok">확 인</div>
+        <div class="p_btn" id="p_change">수 정</div>
+        <div class="p_btn" id="p_cancel">취 소</div>
+        <div class="p_btn" id="p_exit">나 가 기</div>
       </div>
     </section>
     <footer class="footer">
@@ -130,6 +130,6 @@
         </div>
       </div>
     </footer>
-    <script href="./main_D.js"></script>
+    <script src="./post.js"></script>
   </body>
 </html>

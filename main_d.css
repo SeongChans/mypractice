@@ -129,6 +129,7 @@ body::-webkit-scrollbar {
   border-right: 2px solid black;
   border-bottom: 2px solid #590202;
 }
+
 .menu:hover ul li:nth-child(1) {
   transition: transform 0.5s;
 }
@@ -371,12 +372,23 @@ body::-webkit-scrollbar {
   height: 20px;
   border-radius: 50%;
   background: linear-gradient(90deg, #fff, #f23030 90%);
-
   /*   border-radius: 0 0 30px 30px; */
 }
-.p_search:hover {
+/* .p_search:hover {
   transition: all 2s linear;
   width: 90%;
+  height: 100px;
+  box-shadow: 0 -2px 1px #000;
+} */
+.searchclick {
+  transition: all 2s;
+  width: 99vw;
+  height: 100px;
+  box-shadow: 0 -2px 1px #000;
+}
+.searchoff {
+  transition: all 2s;
+  width: 100px;
   height: 100px;
   box-shadow: 0 -2px 1px #000;
 }
@@ -385,13 +397,18 @@ body::-webkit-scrollbar {
     transform: rotateY(0deg);
   }
   50% {
-    transform: rotateY(7200deg);
+    transform: rotateY(28800deg);
   }
   100% {
-    transform: rotateY(14400deg);
+    transform: rotateY(57600deg);
   }
 }
-.p_search:hover .oracle {
+.searchclick .oracle {
+  animation: rotation 1s;
+  border-left: 1px solid black;
+  box-shadow: -2px -2px 1px #590202;
+}
+.searchoff .oracle {
   animation: rotation 1s;
   border-left: 1px solid black;
   box-shadow: -2px -2px 1px #590202;
@@ -399,10 +416,16 @@ body::-webkit-scrollbar {
 .postmain {
   width: 99vw;
   height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
   border-radius: 10px;
   background-color: #d94141;
+}
+.p_chart {
+  width: 100%;
+  height: 10%;
+  background-color: #590202;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
 }
 .p_num {
   width: 10%;
@@ -411,7 +434,7 @@ body::-webkit-scrollbar {
   margin: 10px 0 0 10px;
   border: 1px solid #000;
 }
-.p_name {
+.p_title {
   width: 50%;
   height: 50px;
   padding: 10px;
@@ -439,34 +462,27 @@ body::-webkit-scrollbar {
   margin: 10px 0;
   border: 1px solid #000;
 }
-.p_main {
+#p_main {
   width: 99%;
-  height: 600px;
-  margin: 0 10px 10px 10px;
-  background-color: #fff;
+  height: 100%;
+  margin: 10px;
   color: #000;
-  border: 1px solid #000;
+}
+#p_main #textboard {
+  width: 100%;
+  height: fit-content;
+  scroll-snap-type: none;
+  background-color: transparent;
+  padding: 10px;
+  border-style: none;
 }
 .p_buttonwrap {
   margin-top: 10px;
   display: flex;
   width: 100%;
   height: 60px;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   justify-content: space-between;
-}
-.p_btn_1 {
-  width: 60%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.p_btn_2 {
-  min-width: 30%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  border: 1px solid #fff;
 }
 .p_btn {
   text-align: center;
@@ -479,11 +495,10 @@ body::-webkit-scrollbar {
   color: #000;
 }
 #p_ok {
-}
-#p_change {
+  display: none;
 }
 #p_cancel {
-  width: 50%;
+  display: none;
 }
-#p_exit {
+.mod {
 }
