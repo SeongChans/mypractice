@@ -7,6 +7,7 @@
     <title>할리스</title>
   </head>
   <link rel="stylesheet" href="./main_d.css" />
+  <link rel="stylesheet" href="./post.css" />
   <body>
     <header class="header">
       <div class="headerwrap">
@@ -73,28 +74,105 @@
       </div>
     </header>
     <section class="post">
-      <div class="p_search">
-        <div class="p_s_open">검색</div>
-        <div class="oracle">
-          <div></div>
-        </div>
-      </div>
       <div class="postmain">
-        <div class="p_chart">
-          <div class="p_num" id="select_n">9</div>
-          <div class="p_title" id="select_t">게시판 제목</div>
-          <div class="p_admin" id="select_a">작성자</div>
-          <div class="p_date" id="select_d">등록 / 수정 날짜</div>
-          <div class="p_look" id="select_l">조회수</div>
+        <div class="p_search">
+          <div class="p_s_open">
+            <label>검색</label>
+            <div class="s_list"></div>
+            <div class="s_title"></div>
+            <div class="s_btn"></div>
+          </div>
+          <div class="oracle">
+            <div></div>
+          </div>
         </div>
-        <div id="p_main">
+        <ul class="p_chart">
+          <li class="p_num" id="select_n">게시판 갯수</li>
+          <li class="p_title" id="select_t">게시판 제목</li>
+          <li class="p_admin" id="select_a">작성자</li>
+          <li class="p_date" id="select_d">등록 / 수정 날짜</li>
+          <li class="p_look" id="select_l">조회수</li>
+        </ul>
+        <div class="chartwrap">
+          <ul class="p_chart" id="1">
+            <li class="p_num">1</li>
+            <li class="p_title">안녕하세요</li>
+            <li class="p_admin">작성자</li>
+            <li class="p_date">등록 / 수정 날짜</li>
+            <li class="p_look">조회수</li>
+          </ul>
+          <ul class="p_chart" id="2">
+            <li class="p_num">2</li>
+            <li class="p_title">잘부탁드립니다.</li>
+            <li class="p_admin">작성자</li>
+            <li class="p_date">등록 / 수정 날짜</li>
+            <li class="p_look">조회수</li>
+          </ul>
+          <ul class="p_chart" id="3">
+            <li class="p_num">3</li>
+            <li class="p_title">망하긴했는데</li>
+            <li class="p_admin">작성자</li>
+            <li class="p_date">등록 / 수정 날짜</li>
+            <li class="p_look">조회수</li>
+          </ul>
+          <ul class="p_chart" id="4">
+            <li class="p_num">4</li>
+            <li class="p_title">어떻게하죠</li>
+            <li class="p_admin">작성자</li>
+            <li class="p_date">등록 / 수정 날짜</li>
+            <li class="p_look">조회수</li>
+          </ul>
+          <ul class="p_chart" id="5">
+            <li class="p_num">5</li>
+            <li class="p_title">오늘저녁은</li>
+            <li class="p_admin">작성자</li>
+            <li class="p_date">등록 / 수정 날짜</li>
+            <li class="p_look">조회수</li>
+          </ul>
+          <ul class="p_chart" id="6">
+            <li class="p_num">6</li>
+            <li class="p_title">치킨이닭.</li>
+            <li class="p_admin">작성자</li>
+            <li class="p_date">등록 / 수정 날짜</li>
+            <li class="p_look">조회수</li>
+          </ul>
+          <ul class="p_chart" id="7">
+            <li class="p_num">7</li>
+            <li class="p_title">CSS</li>
+            <li class="p_admin">작성자</li>
+            <li class="p_date">등록 / 수정 날짜</li>
+            <li class="p_look">조회수</li>
+          </ul>
+          <ul class="p_chart" id="8">
+            <li class="p_num">8</li>
+            <li class="p_title">너무많아요</li>
+            <li class="p_admin">작성자</li>
+            <li class="p_date">등록 / 수정 날짜</li>
+            <li class="p_look">조회수</li>
+          </ul>
+          <ul class="p_chart" id="9">
+            <li class="p_num">9</li>
+            <li class="p_title">아직은 어려워</li>
+            <li class="p_admin">작성자</li>
+            <li class="p_date">등록 / 수정 날짜</li>
+            <li class="p_look">조회수</li>
+          </ul>
+          <ul class="p_chart" id="10">
+            <li class="p_num">10</li>
+            <li class="p_title">열심히해야지</li>
+            <li class="p_admin">작성자</li>
+            <li class="p_date">등록 / 수정 날짜</li>
+            <li class="p_look">조회수</li>
+          </ul>
+        </div>
+        <div class="off" id="p_main">
           <textarea id="textboard" readonly>게시판입니다.</textarea>
         </div>
       </div>
-      <div class="p_buttonwrap">
-        <div class="p_btn" id="p_ok">확 인</div>
+      <div class="p_buttonwrap off">
+        <div class="p_btn off" id="p_ok">확 인</div>
         <div class="p_btn" id="p_change">수 정</div>
-        <div class="p_btn" id="p_cancel">취 소</div>
+        <div class="p_btn off" id="p_cancel">취 소</div>
         <div class="p_btn" id="p_exit">나 가 기</div>
       </div>
     </section>

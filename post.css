@@ -1,0 +1,178 @@
+.post {
+  position: relative;
+  width: 100%;
+  padding: 160px 10px 10px 10px;
+  min-height: 100vh;
+  display: block;
+}
+.p_search {
+  position: relative;
+  width: 100px;
+  height: 10vh;
+  background-color: #f23030;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  box-shadow: -1px -3px 1px #590202;
+}
+.p_search > .p_s_open {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+}
+.p_search .oracle {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  height: 10vh;
+  width: 20px;
+  border-radius: 20px;
+  border-left: 1px solid black;
+  box-shadow: -2px -1px 1px #590202;
+  background: linear-gradient(90deg, #f21030 20%, #fff, #f23030 70%);
+}
+.p_search .oracle div {
+  position: absolute;
+  right: 1px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #fff, #f23030 90%);
+  /*   border-radius: 0 0 30px 30px; */
+}
+/* .p_search:hover {
+    transition: all 2s linear;
+    width: 90%;
+    height: 100px;
+    box-shadow: 0 -2px 1px #000;
+  } */
+.searchclick {
+  transition: all 2s;
+  width: 99vw;
+  height: 10vh;
+  box-shadow: 0 -2px 1px #000;
+}
+.searchoff {
+  transition: all 2s;
+  width: 100px;
+  height: 10vh;
+  box-shadow: 0 -2px 1px #000;
+}
+@keyframes rotation {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(28800deg);
+  }
+  100% {
+    transform: rotateY(57600deg);
+  }
+}
+.searchclick .oracle {
+  animation: rotation 1s;
+  border-left: 1px solid black;
+  box-shadow: -2px -2px 1px #590202;
+}
+.searchoff .oracle {
+  animation: rotation 1s;
+  border-left: 1px solid black;
+  box-shadow: -2px -2px 1px #590202;
+}
+.postmain {
+  width: 100%;
+  min-height: 100vh;
+  border-radius: 10px;
+  background-color: #d94141;
+  display: block;
+}
+.p_chart {
+  list-style: none;
+  width: 100%;
+  height: 10%;
+  background-color: #590202;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.chartwrap .p_chart li {
+  color: #fff;
+}
+.p_num {
+  width: 10%;
+  height: 100%;
+  padding: 10px;
+  margin: 10px 0 0 10px;
+  border: 1px solid #000;
+}
+.p_title {
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #000;
+}
+.chartwrap .p_chart .p_title {
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+.p_admin {
+  width: 14%;
+  height: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #000;
+}
+.p_date {
+  width: 14%;
+  height: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #000;
+}
+.p_look {
+  width: 10%;
+  height: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #000;
+}
+
+#p_main {
+  width: 100%;
+  min-height: 50vh;
+  margin: 10px;
+  color: #000;
+}
+#p_main #textboard {
+  width: 99%;
+  height: 50vh;
+  cursor: auto;
+  scroll-snap-type: none;
+  background-color: transparent;
+  padding: 10px;
+  border-style: none;
+}
+.p_buttonwrap {
+  margin-top: 10px;
+  width: 100%;
+  height: 10%;
+  border: 1px solid #000;
+  justify-content: space-between;
+}
+.p_btn {
+  text-align: center;
+  cursor: pointer;
+  width: 20%;
+  padding-top: 5px;
+  margin: 10px;
+  border: 1px solid #000;
+  background-color: lightgray;
+  color: #000;
+}
+.off {
+  display: none;
+}
+.flexon {
+  display: block;
+}
