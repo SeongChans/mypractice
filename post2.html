@@ -74,27 +74,27 @@
       <section class="p_nav">
         <ul>
           <li class="navop click"><label>전체</label></li>
-          <li class="navop"><label>공지사항</label></li>
-          <li class="navop"><label>이벤트</label></li>
-          <li class="navop"><label>기타</label></li>
+          <li class="navop" id="news"><label>공지사항</label></li>
+          <li class="navop" id="event"><label>이벤트</label></li>
+          <li class="navop" id="etc"><label>기타</label></li>
           <div class="circle"></div>
         </ul>
       </section>
       <section class="p_main">
         <div class="p_m_search">
           <div class="p_m_s_cate">
-            <label>검색조건 : </label>
-            <select>
+            <label>제목을 입력해주세요</label>
+<!--             <select id="selectbox">
               <option>제목</option>
               <option>작성자</option>
               <option>번호</option>
-            </select>
+            </select> -->
           </div>
           <div class="p_m_s_title">
-            <input type="text" placeholder="입력해주세요." />
+            <input class="titlesearch" id="search" type="text" placeholder="입력해주세요." />
           </div>
           <div class="p_m_s_btn">
-            <button id="search">검색</button>
+            <button id="searchbtn">검색</button>
           </div>
         </div>
         <div class="p_m_main">
@@ -118,7 +118,7 @@
             <ul class="p_m_m_c_page2">
               <li class="p_m_m_c_cate">이벤트</li>
               <li class="p_m_m_c_num">2</li>
-              <li class="p_m_m_c_title"><a href="">안녕하십니까</a></li>
+              <li class="p_m_m_c_title"><a href="">반갑습니다</a></li>
               <li class="p_m_m_c_admin">지성찬</l1i>
               <li class="p_m_m_c_focus">1</li>
               <li class="p_m_m_c_date">2022-07-03</li>
@@ -126,7 +126,7 @@
             <ul class="p_m_m_c_page2">
               <li class="p_m_m_c_cate">공지사항</li>
               <li class="p_m_m_c_num">3</li>
-              <li class="p_m_m_c_title"><a href="">안녕하십니까</a></li>
+              <li class="p_m_m_c_title"><a href="">생전처음입니다만</a></li>
               <li class="p_m_m_c_admin">지성찬</l1i>
               <li class="p_m_m_c_focus">1</li>
               <li class="p_m_m_c_date">2022-07-03</li>
@@ -134,7 +134,7 @@
             <ul class="p_m_m_c_page2">
               <li class="p_m_m_c_cate">기타</li>
               <li class="p_m_m_c_num">4</li>
-              <li class="p_m_m_c_title"><a href="">안녕하십니까</a></li>
+              <li class="p_m_m_c_title"><a href="">잘부탁드립니다.</a></li>
               <li class="p_m_m_c_admin">지성찬</l1i>
               <li class="p_m_m_c_focus">1</li>
               <li class="p_m_m_c_date">2022-07-03</li>
@@ -145,7 +145,7 @@
               <img class="profileimg">
               <div class="profilename">     
                  <label>닉네임 :</label>
-                <label>&nbsp까마귀</label>
+                <label>&nbsp지성찬</label>
               </div>
               <div class="profilelevel">
                 <label>등급 :</label>
@@ -160,7 +160,7 @@
           </div>
           <div class="p_m_p_num">
             <ul>
-              <li class="pagenum" id="nowpage">1</li>
+              <li class="pagenum nowpage">1</li>
               <li class="pagenum">2</li>
               <li class="pagenum">3</li>
               <li class="pagenum">4</li>
